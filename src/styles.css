@@ -16,6 +16,7 @@
     --font-family-body: var(--font-family-primary);
     --font-family-accent: var(--font-family-primary);
 
+    --fw-regular: 500;
     --fw-semi-bold: 600;
     --fw-bold: 700;
 
@@ -119,6 +120,8 @@ body {
     flex-direction: row;
     gap: var(--size-1100);
     padding: var(--size-500);
+    justify-content: center;
+    align-items: center;
   }
 
   .nav-bar nav ul {
@@ -126,6 +129,25 @@ body {
     gap: var(--fs-300);
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  
+  .nav-bar ul a {
+    color: var(--clr-regular-100);
+  }
+
+  .nav-bar ul a[data-type="visible"] {
+    color: #000;
+    font-weight: var(--fw-bold);
+  }
+  .nav-bar .Buttons--Container {
+    border: none;
+  }
+  
+  .Buttons--Container button {
+    cursor: pointer;
+    border: none;
+    padding: var(--size-200) var(--size-400);
+    border-radius: var(--size-200);
   }
   
   /* utility classes */
@@ -218,7 +240,8 @@ body {
   
 .bg-accent-100 {
       background-color: var(--clr-accent-100);
-  }
+      color: var(--clr-neutral-100);
+    }
   
 .bg-netural-600 {
       background-color: var(--clr-neutral-600);
@@ -233,6 +256,9 @@ body {
       font-weight: var(--fw-semi-bold);
   }
   
+  .fw-regular-bold {
+    font-weight: var(--fw-regular);
+}
 /* headings */
   
 .fs-primary-heading {
