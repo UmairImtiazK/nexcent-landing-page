@@ -1,15 +1,24 @@
 import React from 'react'
 import illustrationImg from '../assets/media/Illustration.png'
+// importing clients organiazations logos
+import client1 from '../assets/media/client 1.svg';
+import client2 from '../assets/media/client 2.svg';
+import client3 from '../assets/media/client 3.svg';
+import client4 from '../assets/media/client 4.svg';
+import client5 from '../assets/media/client 5.svg';
+import client6 from '../assets/media/client 6.svg';
+import client7 from '../assets/media/client 7.svg';
+
 
 export default function Home() {
   return (
     <section>
-      <section className='bg-neutral-200 | Hero-Section'>
+      <section className='bg-neutral-200 | Hero-Section padding-block-900'>
        <div className="container">
         <div className="even-colums">
           <div>
-            <h1 className='text-regular-100 fs-primary-heading'>Lessons and insights <span>from 8 years</span> </h1>
-            <p>
+            <h1 className='fs-primary-heading fw-semi-bold'>Lessons and insights <span className='text-accent-100'>from 8 years</span> </h1>
+            <p className='padding-block-400'>
               Where to grow your business as a photographer: site or social
               media?
             </p>
@@ -19,29 +28,27 @@ export default function Home() {
             <img src={illustrationImg} alt="" />
           </div>
         </div>
-        <div>
-          {/* <!-- dots --> */}
-        </div>
       </div>
       
       </section>
       {/* <!-- clients  --> */}
-      <div>
-        <div>
-          <h2>Our Clients</h2>
-          <p>We have been working with some Fortune 500+ clients</p>
+      <section className='clients-section'>
+      <div className='container'>
+        <div className='mx-auto'>
+          <h2 className='fs-secondary-heading'>Our Clients</h2>
+          <p >We have been working with some Fortune 500+ clients</p>
         </div>
-        <div>
-          <img src="./src/assets/media/client 1.svg" alt="" />
-          <img src="./src/assets/media/client 2.svg" alt="" />
-          <img src="./src/assets/media/client 3.svg" alt="" />
-          <img src="./src/assets/media/client 4.svg" alt="" />
-          <img src="./src/assets/media/client 5.svg" alt="" />
-          <img src="./src/assets/media/client 6.svg" alt="" />
-          <img src="./src/assets/media/client 7.svg" alt="" />
+        <div className='clients-org'>
+          <img src={client1} alt="" />
+          <img src={client2} alt="" />
+          <img src={client3} alt="" />
+          <img src={client4} alt="" />
+          <img src={client5} alt="" />
+          <img src={client6} alt="" />
+          <img src={client7} alt="" />
         </div>
       </div>
-
+      </section>
       {/* <!-- Comunity --> */}
       <div>
         <div>

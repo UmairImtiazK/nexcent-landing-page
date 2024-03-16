@@ -26,6 +26,8 @@
     --fs-150: 1.25rem;
     --fs-200: 1.3rem;
     --fs-300: 2.2rem;
+    --fs-320: 3.2rem;
+    --fs-350: 3.5rem;
     --fs-400: 4rem;
 
     --fs-body: var(--fs-100);
@@ -228,7 +230,27 @@ body {
     display: grid;
   }
 
-  
+  .Hero-Section h1 {
+    font-size: var(--fs-320);
+  }
+
+  .even-colums {
+    align-items: center;
+  }
+
+  /* clients-section */
+  .clients-section {
+    display: grid;
+    justify-content: center;
+  }
+
+  .clients-section .clients-org {
+    display: flex;
+    justify-content: center;
+    gap: var(--size-1000);
+  }
+
+
   /* utility classes */
 .visually-hidden {
       position: absolute;
@@ -342,12 +364,12 @@ body {
   
 .fs-primary-heading {
       font-size: var(--fs-primary-heading);
-      line-height: 4.75;
+      line-height: 1.2;
   }
   
 .fs-secondary-heading {
       font-size: var(--fs-secondary-heading);
-      line-height: 2.75;
+      line-height: 1.2;
   }
   
 .fs-200 {
