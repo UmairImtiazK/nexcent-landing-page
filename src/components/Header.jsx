@@ -25,7 +25,7 @@ export default function Header() {
     <header className="bg-neutral-200 fs-50 fw-regular-bold">
       <div className="container">
         <section className="nav-bar | text-regular-100">
-          <div>
+          <div className="logo-cont">
             <a href="#">
               <img
                 src="./src/assets/media/Logo (2).svg"
@@ -33,8 +33,38 @@ export default function Header() {
               />
             </a>
           </div>
-          { windowWidth <= 1200 && (
-            <nav className={ toggle? 'sm-only': 'lrg-only' }>
+         {
+          windowWidth >= 1200 && (
+            <nav className='primary-navigation'>
+            <ul>
+              <li>
+                <a href="#" data-type="visible">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">Service</a>
+              </li>
+              <li>
+                <a href="#">Feature</a>
+              </li>
+              <li>
+                <a href="#">Product</a>
+              </li>
+              <li>
+                <a href="#">Testimonial</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+          )
+         }
+
+         {
+         toggle && windowWidth <= 1200 && (
+            <nav className={`primary-navigation ${toggle? 'sm-only': 'lrg-only' }`}>
               <ul>
                 <li>
                   <a href="#" data-type="visible">
@@ -58,7 +88,10 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
-          )}
+          )
+         }
+            
+         
 
           <div className="Buttons--Container">
             <button type="button" className="text-accent-100 bg-neutral-200">
