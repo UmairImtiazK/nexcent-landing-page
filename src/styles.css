@@ -314,6 +314,29 @@ body {
     flex-wrap: wrap;
   }
 }
+
+/* local-bussiness-section */
+.local-bussiness-section h1 {
+  font-size: var(--fs-300);
+}
+
+.bussiness-count  {
+  display: grid;
+  grid-template: repeat(2,40%) / repeat(2,35%);
+  column-gap: var(--size-900);
+  row-gap: var(--size-600);
+  
+} 
+
+.bussiness-count .cont img {
+  float: left;
+  margin-right: var(--size-300);
+}
+
+.bussiness-count h1 {
+  font-size: var(--fs-200);
+}
+
 /* utility classes */
 .visually-hidden {
   position: absolute;
