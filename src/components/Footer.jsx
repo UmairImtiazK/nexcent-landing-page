@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="container">
           <h1>Pellentesque suscipit fringilla libero eu.</h1>
 
-          <button type="button">
+          <button type="button" className='btn'>
             Get a Demo <img src="./src/assets/media/Right.svgs" alt="" />
           </button>
         </div>

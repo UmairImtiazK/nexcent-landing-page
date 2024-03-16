@@ -1,4 +1,5 @@
 import React from 'react'
+import rightIcon from '../assets/media/Right.svg'
 
 export default function Body() {
   return (
@@ -19,7 +20,7 @@ export default function Body() {
             auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus
             sem. Donec elementum pulvinar odio.
           </p>
-          <button type="button">Learn More</button>
+          <button type="button" className='btn'>Learn More</button>
         </div>
       </div>
 
@@ -75,7 +76,7 @@ export default function Body() {
             libero. Donec consectetur faucibus ipsum id gravida.
           </p>
 
-          <button type="button">Learn More</button>
+          <button type="button" className='btn'>Learn More</button>
         </div>
       </div>
 
@@ -108,7 +109,7 @@ export default function Body() {
             <img src="./src/assets/media/customer 4.svg" alt="" />
             <img src="./src/assets/media/customer 5.svg" alt="" />
             <img src="./src/assets/media/customer 6.svg" alt="" />
-            <button type="button">
+            <button type="button" className='btn btn-customer'>
               Meet all customers
               <img src="./src/assets/media/Right.svg" alt="" />
             </button>
@@ -134,8 +135,8 @@ export default function Body() {
       <img src="./src/assets/media/image 19.png" alt="" />
       <div>
         <h1>Creating Streamlined Safeguarding Processes with OneRen</h1>
-        <button type="button">
-          Readmore <img src="./src/assets/media/Right.svgs" alt="" />
+        <button type="button" className='btn btn-customer'>
+          Readmore <img src={rightIcon} alt="" />
         </button>
       </div>
     </div>
@@ -147,8 +148,8 @@ export default function Body() {
           What are your safeguarding responsibilities and how can you
           manage them?
         </h1>
-        <button type="button">
-          Readmore <img src="./src/assets/media/Right.svgs" alt="" />
+        <button type="button" className='btn btn-customer'>
+          Readmore <img src={rightIcon} alt="" />
         </button>
       </div>
     </div>
@@ -156,8 +157,8 @@ export default function Body() {
       <img src="./src/assets/media/image 19.png" alt="" />
       <div>
         <h1>Revamping the Membership Model with Triathlon Australia</h1>
-        <button type="button">
-          Readmore <img src="./src/assets/media/Right.svgs" alt="" />
+        <button type="button" className='btn btn-customer'>
+          Readmore <img src={rightIcon} alt="" />
         </button>
       </div>
     </div>

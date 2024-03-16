@@ -1,27 +1,30 @@
 import React from 'react'
+import illustrationImg from '../assets/media/Illustration.png'
 
 export default function Home() {
   return (
     <section>
-    <div className="container">
-      <div>
-        <div className="even-columns">
+      <section className='bg-neutral-200 | Hero-Section'>
+       <div className="container">
+        <div className="even-colums">
           <div>
-            <h1>Lessons and insights from 8 years</h1>
+            <h1 className='text-regular-100 fs-primary-heading'>Lessons and insights <span>from 8 years</span> </h1>
             <p>
               Where to grow your business as a photographer: site or social
               media?
             </p>
-            <button type="button">Register</button>
+            <button type="button" className='btn'>Register</button>
           </div>
           <div>
-            <img src="./src/assets/media/Illustration.png" alt="" />
+            <img src={illustrationImg} alt="" />
           </div>
         </div>
         <div>
           {/* <!-- dots --> */}
         </div>
       </div>
+      
+      </section>
       {/* <!-- clients  --> */}
       <div>
         <div>
@@ -78,8 +81,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      </section>
+     
 
   )
 }

@@ -34,7 +34,7 @@ export default function Header() {
             </a>
           </div>
          {
-          windowWidth >= 1200 && (
+          windowWidth > 1240 && (
             <nav className='primary-navigation'>
             <ul>
               <li>
@@ -63,7 +63,7 @@ export default function Header() {
          }
 
          {
-         toggle && windowWidth <= 1200 && (
+         toggle && windowWidth < 1230 && (
             <nav className='primary-navigation'>
               <ul>
                 <li>
@@ -97,7 +97,7 @@ export default function Header() {
             <button type="button" className="text-accent-100 bg-neutral-200">
               Login
             </button>
-            <button status="active" type="button" className="login-btn | bg-accent-100">
+            <button status="active" type="button" className="btn | login-btn | bg-accent-100">
               Sign up
             </button>
             {windowWidth <= 1200 && (
