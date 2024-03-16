@@ -3,7 +3,7 @@ import humbglerIcon from "../assets/media/icon-hamburger.svg";
 import closeIcon from "../assets/media/icon-close.svg";
 
 export default function Header() {
-  const [toggle, settoggel] = useState(true);
+  const [toggle, settoggel] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Header() {
   };
   return (
     <header className="bg-neutral-200 fs-50 fw-regular-bold">
-      <div className="container">
+     
         <section className="nav-bar | text-regular-100">
           <div className="logo-cont">
             <a href="#">
@@ -64,7 +64,7 @@ export default function Header() {
 
          {
          toggle && windowWidth <= 1200 && (
-            <nav className={`primary-navigation ${toggle? 'sm-only': 'lrg-only' }`}>
+            <nav className='primary-navigation'>
               <ul>
                 <li>
                   <a href="#" data-type="visible">
@@ -97,7 +97,7 @@ export default function Header() {
             <button type="button" className="text-accent-100 bg-neutral-200">
               Login
             </button>
-            <button status="active" type="button" className="bg-accent-100">
+            <button status="active" type="button" className="login-btn | bg-accent-100">
               Sign up
             </button>
             {windowWidth <= 1200 && (
@@ -111,7 +111,7 @@ export default function Header() {
             )}
           </div>
         </section>
-      </div>
+    
     </header>
   );
 }

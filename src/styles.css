@@ -20,6 +20,7 @@
     --fw-semi-bold: 600;
     --fw-bold: 700;
 
+    --fs-25: 0.625rem;
     --fs-50: 0.875rem;
     --fs-100: 1rem;
     --fs-150: 1.25rem;
@@ -114,12 +115,20 @@ body {
       color: var(--clr-primary-400);
   }
   
+  .btn {
+    background-color: var(--clr-accent-100);
+    font-size: var(--fs-50);
+    border-radius: var(--size-100);
+    padding-block: var(--size-300);
+  }
+
+  
   /* header */
   .nav-bar {
     display: grid;
     gap: var(--size-700);
     padding: var(--size-500);
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -143,6 +152,32 @@ body {
   }
   
   
+  .nav-bar ul a {
+    color: var(--clr-regular-100);
+  }
+
+  .nav-bar ul a[data-type="visible"] {
+    color: #000;
+    font-weight: var(--fw-bold);
+  }
+
+  .nav-bar .Buttons--Container {
+    border: none;
+    display: flex;
+  }
+  
+  .Buttons--Container button {
+    cursor: pointer;
+    border: none;
+    border-radius: var(--size-200);
+    padding: var(--size-200) var(--size-400);
+  }
+  
+  .nav-toggle {
+    margin-left: var(--size-500);
+  }
+  
+  
   @media (max-width: 78em) {
     .logo-cont {
       grid-row: 1;
@@ -163,45 +198,21 @@ body {
       align-items: center;
     }
 
-    
-  }
-  .nav-bar ul a {
-    color: var(--clr-regular-100);
-  }
-
-  .nav-bar ul a[data-type="visible"] {
-    color: #000;
-    font-weight: var(--fw-bold);
-  }
-
-  .nav-bar .Buttons--Container {
-    border: none;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .Buttons--Container button {
-    cursor: pointer;
-    border: none;
-    border-radius: var(--size-200);
-    padding: var(--size-200) var(--size-400);
-  }
-  
-  .nav-toggle {
-    margin-left: var(--size-500);
-  }
-  .nav-toggle img {
-    width: var(--size-400);
-  }
-
-  @media (max-width: 78em) {
-    .nav-bar {
-      gap: var(--size-700)
+     .Buttons--Container button {
+     padding: var(--size-100) var(--size-300);
     }
 
+    .header-container {
+      --max-width: 1440px;
+      --container-padding: 3rem;
+      margin-inline: auto;
+      width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+    }
 
-    
   }
+
+  
+  
   /* utility classes */
 .visually-hidden {
       position: absolute;
