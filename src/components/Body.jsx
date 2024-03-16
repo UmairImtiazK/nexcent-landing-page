@@ -33,6 +33,7 @@ export default function Body() {
             </div>
           </div>
         </div>
+        </section>
         {/*  */}
         <br />
         <section className="local-bussiness-section | bg-neutral-200 padding-block-600">
@@ -85,15 +86,13 @@ export default function Body() {
         </section>
         {/*  */}
 
-        <section className="">
+        <section className="Design-section | padding-block-600">
           <div className="container">
-        <div className="even-coulms">
+        <div className="even-colums">
+          
           <div>
-            <img src="./src/assets/media/rafiki.png" alt="" />
-          </div>
-          <div>
-            <h1 className="">How to design your site footer like we did</h1>
-            <p>
+            <h1 className="fs-secondary-heading fw-semi-bold">How to design your site footer like we did</h1>
+            <p className="padding-block-400">
               Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
               augue nec tincidunt molestie, massa nunc varius arcu, at
               scelerisque elit erat a magna. Donec quis erat at libero ultrices
@@ -109,17 +108,22 @@ export default function Body() {
               Learn More
             </button>
           </div>
+          <div>
+            <img src="./src/assets/media/rafiki.png" alt="" />
+          </div>
         </div>
         </div>
         </section>
         {/*  */}
 
+    <section className="customer-cont | padding-block-600  bg-neutral-200">
+        <div className="container">
         <div className="even-colums">
           <div>
             <img src="./src/assets/media/image 9.png" alt="" />
           </div>
           <div>
-            <h1>
+            <h1 className="fs-100 fw-regular-bold">
               Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
               lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
               enim metus. Vivamus sed libero ornare, tristique quam in, gravida
@@ -132,9 +136,9 @@ export default function Body() {
               condimentum id. Curabitur id nibh id sem dignissim finibus ac sit
               amet magna
             </h1>
-            <h3>Tim Smith</h3>
-            <p>British Dragon Boat Racing Association</p>
-            <div>
+            <h3 className="fs-150 fw-regular-bold text-accent-100">Tim Smith</h3>
+            <p >British Dragon Boat Racing Association</p>
+            <div className="cust-logo | padding-block-400">
               <img src="./src/assets/media/customer 1.svg" alt="" />
               <img src="./src/assets/media/customer 2.svg" alt="" />
               <img src="./src/assets/media/customer 3.svg" alt="" />
@@ -148,20 +152,22 @@ export default function Body() {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
-      <section>
+      <section >
         <div className="container">
+          <div className="marketing-section | padding-block-900">
           <div>
-            <h1>Caring is the new marketing</h1>
-            <p>
+            <h1 className="fs-secondary-heading fw-semi-bold text-center">Caring is the new marketing</h1>
+            <p className="text-center">
               The Nexcent blog is the best place to read about the latest
               membership insights, trends and more. See who s joining the
               community, read about how our community are increasing their
               membership income and lot s more.
             </p>
           </div>
-          <div>
+          <div className="marketing-cont">
             <div>
               <img src="./src/assets/media/image 19.png" alt="" />
               <div>
@@ -195,7 +201,9 @@ export default function Body() {
             </div>
           </div>
         </div>
+        </div>
       </section>
+      
     </section>
   );
 }

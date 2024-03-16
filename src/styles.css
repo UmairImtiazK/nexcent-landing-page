@@ -25,6 +25,7 @@
   --fs-100: 1rem;
   --fs-150: 1.25rem;
   --fs-200: 1.3rem;
+  --fs-250: 1.8rem;
   --fs-300: 2.2rem;
   --fs-320: 3.2rem;
   --fs-350: 3.5rem;
@@ -129,6 +130,7 @@ body {
   font-weight: var(--fw-regular);
   background-color: #fff;
   color: var(--clr-accent-100);
+  background: transparent;
 }
 
 /* header */
@@ -337,6 +339,37 @@ body {
   font-size: var(--fs-200);
 }
 
+
+/* Design-section */
+.Design-section h1 {
+  font-size: var(--fs-300);
+}
+
+/* customer-cont */
+.customer-cont .even-colums {
+  grid-auto-columns: .4fr 1fr;
+  gap: var(--size-800);
+}
+
+.customer-cont .cust-logo {
+  display: flex;
+  gap: var(--size-500);
+}
+
+/* marketing-section */
+.marketing-section {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.marketing-section h1 {
+  font-size: var(--fs-250);
+}
+.marketing-cont {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* utility classes */
 .visually-hidden {
   position: absolute;
@@ -462,6 +495,10 @@ body {
 
 .fs-50 {
   font-size: var(--fs-50);
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
 }
 
 .fs-150 {
