@@ -162,39 +162,39 @@ export default function Body() {
             <h1 className="fs-secondary-heading fw-semi-bold text-center">Caring is the new marketing</h1>
             <p className="text-center">
               The Nexcent blog is the best place to read about the latest
-              membership insights, trends and more. See who s joining the
-              community, read about how our community are increasing their
+              membership insights,<br /> trends and more. See who s joining the
+              community, read about how our community <br /> are increasing their
               membership income and lot s more.
             </p>
           </div>
-          <div className="marketing-cont">
-            <div>
+          <div className="marketing-cont | padding-block-400">
+            <div className="marketing-sub-cont">
               <img src="./src/assets/media/image 19.png" alt="" />
-              <div>
-                <h1>Creating Streamlined Safeguarding Processes with OneRen</h1>
-                <button type="button" className="btn btn-customer">
+              <div className="marketing-card">
+                <h2  className="fs-100 fw-regular-bold text-accent-100 text-center">Creating Streamlined Safeguarding Processes with OneRen</h2>
+                <button type="button" className="btn btn-customer text-center">
                   Readmore <img src={rightIcon} alt="" />
                 </button>
               </div>
             </div>
 
-            <div>
+            <div className="marketing-sub-cont">
               <img src="./src/assets/media/image 20.png" alt="" />
-              <div>
-                <h1>
+              <div className="marketing-card">
+                <h2 className="fs-100 fw-regular-bold text-accent-100 text-center">
                   What are your safeguarding responsibilities and how can you
                   manage them?
-                </h1>
-                <button type="button" className="btn btn-customer">
+                </h2>
+                <button type="button" className="btn btn-customer text-center">
                   Readmore <img src={rightIcon} alt="" />
                 </button>
               </div>
             </div>
-            <div>
+            <div className="marketing-sub-cont">
               <img src="./src/assets/media/image 19.png" alt="" />
-              <div>
-                <h1>Revamping the Membership Model with Triathlon Australia</h1>
-                <button type="button" className="btn btn-customer">
+              <div className="marketing-card">
+                <h2 className="fs-100 fw-regular-bold text-accent-100 text-center">Revamping the Membership Model with Triathlon Australia</h2>
+                <button type="button" className="btn btn-customer text-center">
                   Readmore <img src={rightIcon} alt="" />
                 </button>
               </div>
