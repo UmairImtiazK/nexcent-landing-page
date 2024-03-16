@@ -9,6 +9,10 @@ import client5 from '../assets/media/client 5.svg';
 import client6 from '../assets/media/client 6.svg';
 import client7 from '../assets/media/client 7.svg';
 
+// importing community icons
+import community1 from '../assets/media/community 1.svg';
+import community2 from '../assets/media/community 2.svg';
+import community3 from '../assets/media/community 3.svg';
 
 export default function Home() {
   return (
@@ -32,7 +36,7 @@ export default function Home() {
       
       </section>
       {/* <!-- clients  --> */}
-      <section className='clients-section'>
+      <section className='clients-section padding-block-600'>
       <div className='container'>
         <div>
           <h2 className='fs-secondary-heading fw-semi-bold text-center'>Our Clients</h2>
@@ -58,9 +62,9 @@ export default function Home() {
           <p className='text-center padding-block-400'>Who is Nextcent suitable for?</p>
         </div>
         <div className='community-cont'>
-          <div>
+          <div className='membeship-cont'>
             <div>
-              <img src="./src/assets/media/community 1.svg" alt="" />
+              <img src={community1} alt="" />
             </div>
             <h2 className='text-center fs-150 fw-bold'>Membership Organisations</h2>
             <p className='text-center'>
@@ -68,9 +72,9 @@ export default function Home() {
               membership renewals and payments
             </p>
           </div>
-          <div>
+          <div className='membeship-cont'>
             <div>
-              <img src="./src/assets/media/community 2.svg" alt="" />
+              <img src={community2} alt="" />
             </div>
             <h2 className='text-center fs-150 fw-bold'>National Associations</h2>
             <p className='text-center'>
@@ -78,9 +82,9 @@ export default function Home() {
               membership renewals and payments
             </p>
           </div>
-          <div>
+          <div className='membeship-cont'>
             <div>
-              <img src="./src/assets/media/community 3.svg" alt="" />
+              <img src={community3} alt="" />
             </div>
             <h2 className='text-center fs-150 fw-bold'>Clubs And Groups</h2>
             <p className='text-center'>
