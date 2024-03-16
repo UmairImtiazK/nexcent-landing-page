@@ -118,7 +118,7 @@ body {
   .nav-bar {
     display: flex;
     flex-direction: row;
-    gap: var(--size-1100);
+    gap: var(--size-700);
     padding: var(--size-500);
     justify-content: center;
     align-items: center;
@@ -139,17 +139,35 @@ body {
     color: #000;
     font-weight: var(--fw-bold);
   }
+
   .nav-bar .Buttons--Container {
     border: none;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .Buttons--Container button {
     cursor: pointer;
     border: none;
-    padding: var(--size-200) var(--size-400);
     border-radius: var(--size-200);
+    padding: var(--size-200) var(--size-400);
   }
   
+  .nav-toggle {
+    margin-left: var(--size-500);
+  }
+  .nav-toggle img {
+    width: var(--size-400);
+  }
+
+  @media (max-width: 78em) {
+    .nav-bar {
+      gap: var(--size-700)
+    }
+
+
+    
+  }
   /* utility classes */
 .visually-hidden {
       position: absolute;
