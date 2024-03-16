@@ -34,11 +34,11 @@ export default function Home() {
       {/* <!-- clients  --> */}
       <section className='clients-section'>
       <div className='container'>
-        <div className='mx-auto'>
-          <h2 className='fs-secondary-heading'>Our Clients</h2>
-          <p >We have been working with some Fortune 500+ clients</p>
+        <div>
+          <h2 className='fs-secondary-heading fw-semi-bold text-center'>Our Clients</h2>
+          <p className='text-center'>We have been working with some Fortune 500+ clients</p>
         </div>
-        <div className='clients-org'>
+        <div className='clients-org padding-block-600'>
           <img src={client1} alt="" />
           <img src={client2} alt="" />
           <img src={client3} alt="" />
@@ -50,18 +50,20 @@ export default function Home() {
       </div>
       </section>
       {/* <!-- Comunity --> */}
-      <div>
+      <section >
+      <div className='container'>
+        <div className='community-section'>
         <div>
-          <h2>Manage your entire community in a single system</h2>
-          <p>Who is Nextcent suitable for?</p>
+          <h2 className='fs-secondary-heading fw-semi-bold text-center'>Manage your entire community <br /> in a single system</h2>
+          <p className='text-center padding-block-400'>Who is Nextcent suitable for?</p>
         </div>
-        <div>
+        <div className='community-cont'>
           <div>
             <div>
               <img src="./src/assets/media/community 1.svg" alt="" />
             </div>
-            <h2>Membership Organisations</h2>
-            <p>
+            <h2 className='text-center fs-150 fw-bold'>Membership Organisations</h2>
+            <p className='text-center'>
               Our membership management software provides full automation of
               membership renewals and payments
             </p>
@@ -70,8 +72,8 @@ export default function Home() {
             <div>
               <img src="./src/assets/media/community 2.svg" alt="" />
             </div>
-            <h2>National Associations</h2>
-            <p>
+            <h2 className='text-center fs-150 fw-bold'>National Associations</h2>
+            <p className='text-center'>
               Our membership management software provides full automation of
               membership renewals and payments
             </p>
@@ -80,14 +82,16 @@ export default function Home() {
             <div>
               <img src="./src/assets/media/community 3.svg" alt="" />
             </div>
-            <h2>Clubs And Groups</h2>
-            <p>
+            <h2 className='text-center fs-150 fw-bold'>Clubs And Groups</h2>
+            <p className='text-center'>
               Our membership management software provides full automation of
               membership renewals and payments
             </p>
           </div>
         </div>
       </div>
+      </div>
+      </section>
       </section>
      
 
