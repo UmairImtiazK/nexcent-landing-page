@@ -7,6 +7,10 @@ import helpingIcon2 from "../assets/media/helping 2.svg";
 import helpingIcon3 from "../assets/media/helping 3.svg";
 import helpingIcon4 from "../assets/media/helping 4.svg";
 
+//imporitng image 
+import panaImg from '../assets/media/pana.jpg';
+import customerImg from '../assets/media/image 9.png';
+
 export default function Body() {
   return (
     <section>
@@ -89,7 +93,9 @@ export default function Body() {
         <section className="Design-section | padding-block-600">
           <div className="container">
         <div className="even-colums">
-          
+        <div>
+            <img src={panaImg} alt="" />
+          </div>
           <div>
             <h1 className="fs-secondary-heading fw-semi-bold">How to design your site footer like we did</h1>
             <p className="padding-block-400">
@@ -108,9 +114,7 @@ export default function Body() {
               Learn More
             </button>
           </div>
-          <div>
-            <img src="./src/assets/media/rafiki.png" alt="" />
-          </div>
+          
         </div>
         </div>
         </section>
@@ -120,7 +124,7 @@ export default function Body() {
         <div className="container">
         <div className="even-colums">
           <div>
-            <img src="./src/assets/media/image 9.png" alt="" />
+            <img src={customerImg} alt="" />
           </div>
           <div>
             <h1 className="fs-100 fw-regular-bold">

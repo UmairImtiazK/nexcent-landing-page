@@ -399,6 +399,8 @@ body {
   top: 140%;
   left: 5%;
   padding: var(--size-500);
+ box-shadow: 0px 8px 16px 0px #ABBED166;
+
 }
 
 .marketing-card h2 {
@@ -428,6 +430,123 @@ body {
     height: 60%;
     top: 40%;
     left: 5%;
+  }
+
+}
+
+
+/* footer */
+/* demo-section */
+.demo-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demo-cont h1 {
+  font-size: var(--fs-350);
+  color: var(--clr-regular-100);
+  margin-bottom: var(--size-400);
+}
+
+@media (max-width: 56.25em) {
+  footer {
+    margin-top: 23rem;
+  }
+}
+/* footer-section */
+.footer-section {
+  display: grid;
+  grid-template-areas: 
+  'logo navigation form';
+}
+
+.logo {
+  width: 50%;
+  grid-area: logo;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo p {
+  opacity: .8;
+  font-size: var(--fs-50);
+}
+
+
+.navigation {
+  grid-area: navigation;
+  display: flex;
+  gap: var(--size-600);
+  margin-right: 20%;
+}
+
+.navigation a {
+  color: var(--clr-neutral-200);
+  font-size: var(--fs-50);
+  margin-bottom: var(--size-350);
+  opacity: .8;
+}
+
+.navigation h2 {
+  font-size: var(--fs-150);
+  font-weight: var(--fw-regular);
+  margin-bottom: var(--size-400);
+}
+
+.form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-neutral-200);
+}
+
+.form > div {
+  display: flex;
+  margin-top: var(--size-600);
+  background-color: var(--clr-neutral-400);
+  padding: var(--size-100) var(--size-200) var(--size-100) var(--size-200);
+  border-radius: var(--size-200);
+  justify-content: space-between;
+}
+
+
+.form input {
+  border: none;
+  background: transparent;
+  outline: 0;
+  color: var(--clr-neutral-200);
+}
+
+
+@media (max-width: 56em) {
+  .footer-section {
+    grid-template-areas: 
+    'form'
+    'navigation'
+    'logo';
+    justify-content: center;
+    justify-items: center;
+    row-gap: 5%;
+  }
+
+  .navigation {
+    margin: 0;
+  }
+
+  .logo {
+    width: 80%;
+    gap: var(--size-400);
+  }
+
+  .form {
+    align-items: center;
   }
 
 }
@@ -525,6 +644,12 @@ body {
 .bg-netural-600 {
   background-color: var(--clr-neutral-600);
 }
+
+.bg-regular-100 {
+  background-color: var(--clr-regular-100);
+  color: var(--clr-neutral-200);
+}
+
 /* font weights */
 
 .fw-bold {
@@ -568,6 +693,10 @@ body {
 
 .padding-block-900 {
   padding-block: var(--size-900);
+}
+
+.padding-block-1100 {
+  padding-block: var(--size-1100);
 }
 
 .padding-block-700 {
