@@ -380,7 +380,7 @@ body {
   display: grid;
   grid-template: repeat(1, 50%) / repeat(3, 30%);
   justify-content: space-evenly;
-  grid-area: 15%;
+  grid-area: 10%;
 }
 
 .marketing-sub-cont {
@@ -399,8 +399,7 @@ body {
   top: 140%;
   left: 5%;
   padding: var(--size-500);
- box-shadow: 0px 8px 16px 0px #ABBED166;
-
+  box-shadow: 0px 8px 16px 0px #abbed166;
 }
 
 .marketing-card h2 {
@@ -416,24 +415,36 @@ body {
   .marketing-card h2 {
     font-size: var(--fs-50);
   }
-
-  
 }
 
-@media (max-width: 54em) {
+@media (max-width: 56em) {
   .marketing-cont {
-    grid-template: repeat(3, 50%) / repeat(1, 80%);
+    grid-template: repeat(3, 20%) / repeat(1, 80%);
+    row-gap: var(--size-1300);
+    justify-items: center;
   }
 
   .marketing-card {
     width: 90%;
     height: 60%;
-    top: 40%;
+    top: 90%;
     left: 5%;
   }
-
 }
 
+@media (max-width: 38em) {
+  .marketing-cont {
+    row-gap: 11rem;
+  }
+
+  .marketing-card {
+    height: 100%;
+  }
+  
+  footer {
+    margin-top: 10rem;
+  }
+}
 
 /* footer */
 /* demo-section */
@@ -450,15 +461,14 @@ body {
 }
 
 @media (max-width: 56.25em) {
-  footer {
-    margin-top: 23rem;
+  .demo-cont h1 {
+    font-size: var(--fs-250);
   }
 }
 /* footer-section */
 .footer-section {
   display: grid;
-  grid-template-areas: 
-  'logo navigation form';
+  grid-template-areas: "logo navigation form";
 }
 
 .logo {
@@ -475,10 +485,9 @@ body {
 }
 
 .logo p {
-  opacity: .8;
+  opacity: 0.8;
   font-size: var(--fs-50);
 }
-
 
 .navigation {
   grid-area: navigation;
@@ -491,7 +500,7 @@ body {
   color: var(--clr-neutral-200);
   font-size: var(--fs-50);
   margin-bottom: var(--size-350);
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .navigation h2 {
@@ -516,7 +525,6 @@ body {
   justify-content: space-between;
 }
 
-
 .form input {
   border: none;
   background: transparent;
@@ -524,13 +532,12 @@ body {
   color: var(--clr-neutral-200);
 }
 
-
 @media (max-width: 56em) {
   .footer-section {
-    grid-template-areas: 
-    'form'
-    'navigation'
-    'logo';
+    grid-template-areas:
+      "form"
+      "navigation"
+      "logo";
     justify-content: center;
     justify-items: center;
     row-gap: 5%;
@@ -548,7 +555,6 @@ body {
   .form {
     align-items: center;
   }
-
 }
 /* utility classes */
 .visually-hidden {
