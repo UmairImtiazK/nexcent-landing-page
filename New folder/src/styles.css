@@ -556,8 +556,6 @@ body {
   background: transparent;
   outline: 0;
   color: var(--clr-neutral-200);
-  width: 100%; 
-  padding: 0.5rem;
 }
 
 @media (max-width: 56em) {
