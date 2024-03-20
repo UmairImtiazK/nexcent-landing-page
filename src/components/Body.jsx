@@ -19,6 +19,9 @@ import customerIcon6 from "../assets/media/customer 6.svg";
 import panaImg from '../assets/media/pana.jpg';
 import customerImg from '../assets/media/image 9.png';
 import rafkiImg from '../assets/media/rafiki.png';
+import Img19 from '../assets/media/image 19.png';
+import Img18 from '../assets/media/image 18.png';
+import Img20 from '../assets/media/image 20.png';
 
 export default function Body() {
   return (
@@ -182,7 +185,7 @@ export default function Body() {
           </div>
           <div className="marketing-cont | padding-block-400">
             <div className="marketing-sub-cont">
-              <img src="./src/assets/media/image 19.png" alt="" />
+              <img src={Img18} alt="" />
               <div className="marketing-card">
                 <h2  className="fs-100 fw-regular-bold text-accent-100 text-center">Creating Streamlined Safeguarding Processes with OneRen</h2>
                 <button type="button" className="btn btn-customer text-center">
@@ -192,7 +195,7 @@ export default function Body() {
             </div>
 
             <div className="marketing-sub-cont">
-              <img src="./src/assets/media/image 20.png" alt="" />
+              <img src={Img19} alt="" />
               <div className="marketing-card">
                 <h2 className="fs-100 fw-regular-bold text-accent-100 text-center">
                   What are your safeguarding responsibilities and how can you
@@ -204,7 +207,7 @@ export default function Body() {
               </div>
             </div>
             <div className="marketing-sub-cont">
-              <img src="./src/assets/media/image 19.png" alt="" />
+              <img src={Img20} alt="" />
               <div className="marketing-card">
                 <h2 className="fs-100 fw-regular-bold text-accent-100 text-center">Revamping the Membership Model with Triathlon Australia</h2>
                 <button type="button" className="btn btn-customer text-center">
