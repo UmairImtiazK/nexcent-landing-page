@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import humbglerIcon from "../assets/media/icon-hamburger.svg";
 import closeIcon from "../assets/media/icon-close.svg";
+import logo from '../assets/media/Logo (2).svg';
 
 export default function Header() {
   const [toggle, settoggel] = useState(false);
@@ -28,7 +29,7 @@ export default function Header() {
           <div className="logo-cont">
             <a href="#">
               <img
-                src="./src/assets/media/Logo (2).svg"
+                src={logo}
                 alt="logo of Website"
               />
             </a>

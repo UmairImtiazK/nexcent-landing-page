@@ -7,9 +7,18 @@ import helpingIcon2 from "../assets/media/helping 2.svg";
 import helpingIcon3 from "../assets/media/helping 3.svg";
 import helpingIcon4 from "../assets/media/helping 4.svg";
 
+//importing community icons 
+import customerIcon1 from "../assets/media/customer 1.svg";
+import customerIcon2 from "../assets/media/customer 2.svg";
+import customerIcon3 from "../assets/media/customer 3.svg";
+import customerIcon4 from "../assets/media/customer 4.svg";
+import customerIcon5 from "../assets/media/customer 5.svg";
+import customerIcon6 from "../assets/media/customer 6.svg";
+
 //imporitng image 
 import panaImg from '../assets/media/pana.jpg';
 import customerImg from '../assets/media/image 9.png';
+import rafkiImg from '../assets/media/rafiki.png';
 
 export default function Body() {
   return (
@@ -19,7 +28,7 @@ export default function Body() {
         <div className="container">
           <div className="even-colums">
             <div>
-              <img src="./src/assets/media/rafiki.png" alt="" />
+              <img src={rafkiImg} alt="" />
             </div>
             <div className="cont">
               <h1 className="fs-secondary-heading fw-semi-bold fs-350">The unseen of spending three years at Pixelgrade</h1>
@@ -143,15 +152,15 @@ export default function Body() {
             <h3 className="fs-150 fw-regular-bold text-accent-100">Tim Smith</h3>
             <p >British Dragon Boat Racing Association</p>
             <div className="cust-logo | padding-block-400">
-              <img src="./src/assets/media/customer 1.svg" alt="" />
-              <img src="./src/assets/media/customer 2.svg" alt="" />
-              <img src="./src/assets/media/customer 3.svg" alt="" />
-              <img src="./src/assets/media/customer 4.svg" alt="" />
-              <img src="./src/assets/media/customer 5.svg" alt="" />
-              <img src="./src/assets/media/customer 6.svg" alt="" />
+              <img src={customerIcon1} alt="" />
+              <img src={customerIcon2} alt="" />
+              <img src={customerIcon3} alt="" />
+              <img src={customerIcon4} alt="" />
+              <img src={customerIcon5} alt="" />
+              <img src={customerIcon6} alt="" />
               <button type="button" className="btn btn-customer">
                 Meet all customers
-                <img src="./src/assets/media/Right.svg" alt="" />
+                <img src={rightIcon} alt="" />
               </button>
             </div>
           </div>

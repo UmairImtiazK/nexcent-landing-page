@@ -1,4 +1,14 @@
 import React from "react";
+//importing logo 
+import right from '../assets/media/Right.svg';
+import send from '../assets/media/send.svg';
+import logo from '../assets/media/Logo.svg';
+
+//importing social icons
+import social1 from '../assets/media/Social Icons-1.svg';
+import social2 from '../assets/media/Social Icons-2.svg';
+import social3 from '../assets/media/Social Icons-3.svg';
+import social4 from '../assets/media/Social Icons.svg';
 
 export default function Footer() {
   return (
@@ -11,7 +21,7 @@ export default function Footer() {
             </h1>
 
             <button type="button" className="btn">
-              Get a Demo <img src="./src/assets/media/Right.svgs" alt="" />
+              Get a Demo <img src={right} alt="" />
             </button>
           </div>
         </div>
@@ -22,13 +32,13 @@ export default function Footer() {
         <div className="container">
           <div className="footer-section">
             <div className="logo">
-              <img src="./src/assets/media/Logo.svg" alt="" />
+              <img src={logo} alt="" />
               <p>Copyright © 2020 Nexcent ltd. All rights reserved</p>
               <div>
-                <img src="./src/assets/media/Social Icons-1.svg" alt="" />
-                <img src="./src/assets/media/Social Icons-2.svg" alt="" />
-                <img src="./src/assets/media/Social Icons-3.svg" alt="" />
-                <img src="./src/assets/media/Social Icons.svg" alt="" />
+                <img src={social1} alt="" />
+                <img src={social2} alt="" />
+                <img src={social3} alt="" />
+                <img src={social4} alt="" />
               </div>
             </div>
 
@@ -89,7 +99,7 @@ export default function Footer() {
                   type="text"
                   placeholder="Your email address"
                 />
-                <img src="./src/assets/media/send.svg" alt="" />
+                <img src={send} alt="" />
               </div>
             </div>
           </div>
