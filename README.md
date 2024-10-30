@@ -1,8 +1,4 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Nexcent Social Marketing Landing Page is a responsive landing page built with React.js and vanilla CSS, designed for a social marketing service. The page showcases demo content to illustrate key features and benefits, and it follows best coding practices for clean, efficient, and maintainable code. With fully responsive design, it adapts seamlessly to various screen sizes, offering an optimal user experience on both desktop and mobile.
+a demo link is here : https://nexcent-landing-page-flax.vercel.app/
